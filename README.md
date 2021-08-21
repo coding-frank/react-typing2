@@ -1,38 +1,38 @@
 # typing-react
-A tiny javascript library for **animation typing effect**.
+A tiny javascript library for **animation typing effect** with optional text highlighting.
 
 - Vanilla JavaScript ⚡
 - no JQuery needed 🎉
 - CSS3 ✔️
 - ES6 ✔️
 
-```
-	<Typing
-		speed={80}
-		betweenDelay={500}
-		deleteDelay={300}
-		deleteSpeed={40}
-		delete
-		// ... you can add more props here
-		data={[
-			{ sentence: "Typing effect..." },
-			{ sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' },
-			// ...
-		]}
-	/>
+```javascript
+<Typing
+	speed={80}
+	betweenDelay={500}
+	deleteDelay={300}
+	deleteSpeed={40}
+	delete
+	// ... you can add more props here
+	data={[
+		{ sentence: "Typing effect..." },
+		{ sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' },
+		// ...
+	]}
+/>
 ```
 
 ## Getting started
 #### Install
 
-```
+```javascript
 npm install --save typing-react
 ````
 
 #### Import module
-Import typing-react into your component.
+Import typing-react into your React component.
 
-```
+```javascript
 import Typing from 'typing-react';
 ```
 
@@ -40,36 +40,36 @@ import Typing from 'typing-react';
 Once you have imported the module you have access to all its props and options.
 
 ```javascript
-	// Basic setup with standard options and without highlighting text effect.
-	<Typing data={{ sentence: "Typing effect..." }} />
+// Basic setup with standard options and without highlighting text effect.
+<Typing data={{ sentence: "Typing effect..." }} />
 
-	// You can use an array instead and add styling options
-	<Typing
-		data={[
-			{ sentence: "My first sentence." },
-			{ sentence: "Even more text here." },
-			// ...
-		]}
-	/>
+// You can use an array instead and add styling options
+<Typing
+	data={[
+		{ sentence: "My first sentence." },
+		{ sentence: "Even more text here." },
+		// ...
+	]}
+/>
 
-	// To highlight text
-	<Typing
-		data={{ 
-			sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
-		}}
-	/>
+// To highlight text
+<Typing
+	data={{ 
+		sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
+	}}
+/>
 
-	// Modify typing speed etc.
-	<Typing
-		speed={80}
-		delete // <-- will delete the text after its fully written.
-		data={{ 
-			sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
-		}}
-	/>
+// Modify typing speed etc.
+<Typing
+	speed={80}
+	delete // <-- will delete the text after its fully written.
+	data={{ 
+		sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
+	}}
+/>
 ````
 
-#### Options
+## Options
 Add some additional options to style your typing effect.
 ### `speed`
 > The typing effect uses a delay in ms between each written letter.
@@ -100,7 +100,7 @@ Add some additional options to style your typing effect.
 >
 > **Default:** `false`
 
-### Cursor options
+## Cursor options
 ### `hideCursor`
 > Hide the cursor after the effect is completed.
 >
