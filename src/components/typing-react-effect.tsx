@@ -103,7 +103,9 @@ const typeSentence = async (ref, sentence, highlightStart = null, highlightEnd =
     }
 
     // append to reference
-    ref.current.appendChild(spanEl);
+    if (ref.current) {
+      ref.current.appendChild(spanEl);
+    }
   }
 };
 
