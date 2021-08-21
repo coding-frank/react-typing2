@@ -119,11 +119,10 @@ const deleteSentence = async (ref, speed) => {
 };
 
 Typing.defaultProps = {
-  speed: 40, // 20-300
+  speed: 40, 
   betweenDelay: 500,
   deleteDelay: 1500,
   deleteSpeed: 100,
-	
   hideCursor: false,
   hideCursorOnExit: false,
   cursorClass: null,
