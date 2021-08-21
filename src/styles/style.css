@@ -28,6 +28,7 @@ body {
 .typing-container .input-cursor {
   display: inline-block;
   width: 2px;
+	color: #fff;
   margin-left: 8px;
   animation: blink 600ms linear infinite alternate;
 }

@@ -123,6 +123,7 @@ Typing.defaultProps = {
   betweenDelay: 500,
   deleteDelay: 1500,
   deleteSpeed: 100,
+	
   hideCursor: false,
   hideCursorOnExit: false,
   cursorClass: null,

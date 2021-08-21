@@ -11,11 +11,8 @@ const App = () => {
 				deleteDelay={300}
 				deleteSpeed={10}
 				delete
-				data={[
-					{ sentence: "Typing effect..." },
-					{ sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' },
-					// ...
-				]}
+				// you can add more props here
+				data={{ sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' }}
 			/>
   );
 };
