@@ -1,8 +1,6 @@
 # typing-react
 A tiny React library for **animation typing effect** with optional text highlighting.
 
-[frankarlt.github.com/typing-react](http://frankarlt.github.com/typing-react)
-
 > ![example](https://github.com/coding-frank/typing-react/blob/main/typing-effect.gif?raw=true)
 
 - Vanilla JavaScript ⚡
