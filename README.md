@@ -1,13 +1,12 @@
 # typing-react
-A tiny javascript library for **animation typing effect** with optional text highlighting.
+A tiny React library for **animation typing effect** with optional text highlighting.
 
 [frankarlt.github.com/typing-react](http://frankarlt.github.com/typing-react)
 
-> <img src="https://camwiegert.github.io/baffle/assets/images/baffle.js.png" width="500" alt="baffle.js">
-
-> ![example](https://github.com/coding-frank/typing-react/blob/master/typing-effect.gif?raw=true)
+> ![example](https://github.com/coding-frank/typing-react/blob/main/typing-effect.gif?raw=true)
 
 - Vanilla JavaScript ⚡
+- ~5.0kb ⚡
 - no JQuery needed 🎉
 - CSS3 ✔️
 - ES6 ✔️
@@ -22,16 +21,16 @@ A tiny javascript library for **animation typing effect** with optional text hig
   // ... you can add more props here
   data={[
     { sentence: "Typing effect..." },
-		{ sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' },
+    { sentence: "...with highlighting.", highlight: 'highlighting', color: '#3366cc' },
     // ...
   ]}
 />
 ```
 
 ## Getting started
-#### Install
+#### Installation
 
-```javascript
+```
 npm install --save typing-react
 ````
 
@@ -39,22 +38,23 @@ npm install --save typing-react
 Import typing-react into your React component.
 
 ```javascript
+// ES6 Modules
 import Typing from 'typing-react';
 ```
 
-#### Use it
+#### Usage
 Once you have imported the module you have access to all its props and options.
 
 ```javascript
-// Basic setup with standard options and without highlighting text effect.
+// Basic setup with standard options without text highlighting.
 <Typing data={{ sentence: "Typing effect..." }} />
 
 // You can use an array to output more than one sentence.
 <Typing
   data={[
-  	{ sentence: "My first sentence." },
-  	{ sentence: "Even more text here." },
-  	// ...
+    { sentence: "My first sentence." },
+    { sentence: "Even more text here." },
+    // ...
   ]}
 />
 
@@ -69,10 +69,10 @@ Once you have imported the module you have access to all its props and options.
 <Typing
   speed={80}
   delete // <-- will delete the text after its fully written.
-	deleteSpeed={50}
-	hideCursorOnExit={true}
+  deleteSpeed={50}
+  hideCursorOnExit={true}
   data={{ 
-	  sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
+    sentence: "The sky is blue today.", highlight: 'blue', color: '#aeccfc' 
   }}
 />
 ````
