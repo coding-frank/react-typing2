@@ -3,6 +3,7 @@ type TypingDataProps = {
 	highlight?: string | null | (string | null | null);
 	color?: string | null | (string | null | null);
 };
+// here we go
 export interface TypingProps {
 	speed?: number; 
 	initDelay?: number;
