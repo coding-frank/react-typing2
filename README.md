@@ -1,10 +1,10 @@
-# typing-react
+# react-typing2
 A tiny React library for **animation typing effect** with optional text highlighting.
 
-> ![example](https://github.com/coding-frank/typing-react/blob/main/typing-effect.gif?raw=true)
+> ![example](https://github.com/coding-frank/react-typing/blob/main/typing-effect2.gif?raw=true)
 
 - Vanilla JavaScript ⚡
-- ~5.0kb ⚡
+- ~260kb ⚡
 - no JQuery needed 🎉
 - CSS3 ✔️
 - ES6 ✔️
@@ -29,21 +29,14 @@ A tiny React library for **animation typing effect** with optional text highligh
 #### Installation
 
 ```
-npm install --save typing-react
+npm install --save react-typing2
 ````
 
-#### Import module
-Import typing-react into your React component.
-
-```javascript
-// ES6 Modules
-import Typing from 'typing-react';
-```
-
 #### Usage
-Once you have imported the module you have access to all its props and options.
 
 ```javascript
+import Typing from 'typing-react2';
+
 // Basic setup with standard options without text highlighting.
 <Typing data={{ sentence: "Typing effect..." }} />
 
@@ -81,6 +74,11 @@ Add some additional options to style your typing effect.
 > The typing effect uses a delay in ms between each written letter.
 >
 > **Default:** `40`
+
+### `initDelay`
+> Initial delay in ms. If some delay is needed before output.
+>
+> **Default:** `0`
 
 ### `betweenDelay`
 > After each fully written sentence will be a break in ms.
