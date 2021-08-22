@@ -1,7 +1,7 @@
 {
 	"name": "react-typing2",
 	"description": "A tiny React library for animation typing effect",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": "Frank Arlt <me@frankarlt.com> (https://frankarlt.com)",
 	"license": "MIT",
 	"main": "dist/index.js",
