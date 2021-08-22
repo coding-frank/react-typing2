@@ -6,7 +6,6 @@ A tiny React library for **animation typing effect** with optional text highligh
 - Vanilla JavaScript ⚡
 - ~260kb ⚡
 - no JQuery needed 🎉
-- CSS3 ✔️
 - ES6 ✔️
 
 ```javascript
