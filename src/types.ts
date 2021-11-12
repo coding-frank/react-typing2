@@ -5,7 +5,9 @@ type TypingDataProps = {
 };
 // here we go
 export interface TypingProps {
-	speed?: number; 
+	speed?: number;
+	infiniteLoop?: boolean;
+	loop?: number;
 	initDelay?: number;
 	betweenDelay?: number;
 	deleteDelay?: number;
